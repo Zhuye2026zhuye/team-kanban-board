@@ -1,1 +1,33 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>ме╤схннЯ©╢╟Е</title><link rel="stylesheet" href="style.css"></head><body><header><h1>ме╤схннЯ©╢╟Е</h1><div id="controls"></div></header><main class="board"><div class="column" id="todo" data-status="todo"><h2>╢Щ╢╕юМ</h2><div class="task-list" id="list-todo"></div></div><div class="column" id="doing" data-status="doing"><h2>╫Ьппжп</h2><div class="task-list" id="list-doing"></div></div><div class="column" id="done" data-status="done"><h2>рямЙЁи</h2><div class="task-list" id="list-done"></div></div></main><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Е⌡╒И≤÷Д╩╩Е┼║Г°▀Ф²©</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Е⌡╒И≤÷Д╩╩Е┼║Г°▀Ф²©</h1>
+        <!-- Е╪═И▒╚Г²©Е├≥Г └Х╬⌠Е┘╔Ф║├И┐╗Е┬├ -->
+        <div id="controls">
+            <input type="text" id="task-input" placeholder="Х╬⌠Е┘╔Ф√╟Д╩╩Е┼║...">
+            <button onclick="addTask()">Ф╥╩Е┼═Д╩╩Е┼║</button>
+        </div>
+    </header>
+    <main class="board">
+        <div class="column" id="todo" data-status="todo">
+            <h2>Е╬┘Е╓└Г░├</h2>
+            <div class="task-list" id="list-todo"></div>
+        </div>
+        <div class="column" id="doing" data-status="doing">
+            <h2>Х©⌡Х║▄Д╦╜</h2>
+            <div class="task-list" id="list-doing"></div>
+        </div>
+        <div class="column" id="done" data-status="done">
+            <h2>Е╥╡Е╝▄Ф┬░</h2>
+            <div class="task-list" id="list-done"></div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

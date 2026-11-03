@@ -1,1 +1,25 @@
-body { font-family: sans-serif; background: #f4f5f7; margin: 0; padding: 20px; } .board { display: flex; gap: 20px; justify-content: space-between; } .column { background: #ebecf0; border-radius: 8px; padding: 10px; flex: 1; min-height: 500px; } .task-card { background: white; padding: 10px; margin-bottom: 10px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); cursor: grab; } .task-card:active { cursor: grabbing; }
+body { font-family: sans-serif; background: #f4f5f7; margin: 0; padding: 20px; }
+header h1 { margin-top: 0; }
+.board { display: flex; gap: 20px; justify-content: space-between; }
+.column { background: #ebecf0; border-radius: 8px; padding: 10px; flex: 1; min-height: 500px; }
+.task-list { min-height: 100px; } /* 张云云拖拽需要的高度 */
+.task-card { background: white; padding: 10px; margin-bottom: 10px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); cursor: grab; }
+.task-card:active { cursor: grabbing; }
+
+/* 张鑫睿增加的输入框样式 */
+#controls { margin-top: 10px; margin-bottom: 20px; }
+#task-input { padding: 8px; width: 300px; border-radius: 4px; border: 1px solid #ccc; outline: none; }
+#controls button { padding: 8px 15px; background: #0052cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+#controls button:hover { background: #0047b3; }body { font-family: sans-serif; background: #f4f5f7; margin: 0; padding: 20px; }
+header h1 { margin-top: 0; }
+.board { display: flex; gap: 20px; justify-content: space-between; }
+.column { background: #ebecf0; border-radius: 8px; padding: 10px; flex: 1; min-height: 500px; }
+.task-list { min-height: 100px; } /* 张云云拖拽需要的高度 */
+.task-card { background: white; padding: 10px; margin-bottom: 10px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); cursor: grab; }
+.task-card:active { cursor: grabbing; }
+
+/* 张鑫睿增加的输入框样式 */
+#controls { margin-top: 10px; margin-bottom: 20px; }
+#task-input { padding: 8px; width: 300px; border-radius: 4px; border: 1px solid #ccc; outline: none; }
+#controls button { padding: 8px 15px; background: #0052cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+#controls button:hover { background: #0047b3; }
