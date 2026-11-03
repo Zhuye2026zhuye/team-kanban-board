@@ -1,25 +1,37 @@
 body { font-family: sans-serif; background: #f4f5f7; margin: 0; padding: 20px; }
-header h1 { margin-top: 0; }
 .board { display: flex; gap: 20px; justify-content: space-between; }
 .column { background: #ebecf0; border-radius: 8px; padding: 10px; flex: 1; min-height: 500px; }
-.task-list { min-height: 100px; } /* 张云云拖拽需要的高度 */
 .task-card { background: white; padding: 10px; margin-bottom: 10px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); cursor: grab; }
 .task-card:active { cursor: grabbing; }
 
-/* 张鑫睿增加的输入框样式 */
-#controls { margin-top: 10px; margin-bottom: 20px; }
-#task-input { padding: 8px; width: 300px; border-radius: 4px; border: 1px solid #ccc; outline: none; }
+#controls { margin-top: 10px; }
+#task-input { padding: 8px; width: 300px; border-radius: 4px; border: 1px solid #ccc; }
 #controls button { padding: 8px 15px; background: #0052cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
-#controls button:hover { background: #0047b3; }body { font-family: sans-serif; background: #f4f5f7; margin: 0; padding: 20px; }
-header h1 { margin-top: 0; }
-.board { display: flex; gap: 20px; justify-content: space-between; }
-.column { background: #ebecf0; border-radius: 8px; padding: 10px; flex: 1; min-height: 500px; }
-.task-list { min-height: 100px; } /* 张云云拖拽需要的高度 */
-.task-card { background: white; padding: 10px; margin-bottom: 10px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); cursor: grab; }
-.task-card:active { cursor: grabbing; }
 
-/* 张鑫睿增加的输入框样式 */
-#controls { margin-top: 10px; margin-bottom: 20px; }
-#task-input { padding: 8px; width: 300px; border-radius: 4px; border: 1px solid #ccc; outline: none; }
-#controls button { padding: 8px 15px; background: #0052cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
-#controls button:hover { background: #0047b3; }
+/* ================= 张云云：拖拽样式开始 ================= */
+
+/* 保证空列也有高度，能接收拖拽 */
+.task-list {
+    min-height: 120px;
+}
+
+/* 拖拽经过列时高亮 */
+.task-list.drag-over {
+    background: #dbeafe;
+    outline: 2px dashed #0052cc;
+    outline-offset: -4px;
+    border-radius: 6px;
+}
+
+/* 正在拖拽的卡片 */
+.task-card.dragging {
+    opacity: 0.5;
+    transform: scale(0.98);
+}
+
+/* 防止拖拽时选中文字 */
+.task-card {
+    user-select: none;
+}
+
+/* ================= 张云云：拖拽样式结束 ================= */
